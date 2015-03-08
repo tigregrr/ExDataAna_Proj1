@@ -1,5 +1,4 @@
 require(data.table)
-require(graphics)
 require(zoo)
 
 wd <- getwd()
@@ -15,5 +14,6 @@ png("plot3.png", width=480, height=480, bg="white")
 plot.zoo(cbind(sm_1,sm_2,sm_3),
          plot.type="single",
          col=c("black", "red","blue"),
-         ylab=paste("Energy sub metering") )
+         ylab=paste("Energy sub metering"),
+         xlab="")
 dev.off()
